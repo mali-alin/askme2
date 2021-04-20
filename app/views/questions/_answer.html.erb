@@ -1,0 +1,20 @@
+<%# Это фрагмет (паршал, partial) для вывода вопроса.В нем определена %>
+<%# локальная переменная question, в которую при вызове будет передан как в %>
+<%# метод ruby объект после ключа (object: @question) %>
+<div class="question">
+  <div class="question-content">
+    <div class="question-text text-lead">
+      <%= answer.text %>
+    </div>
+
+    <% if answer.present? %>
+      <div class="question-answer text-lead">
+        <%= answer.text %>
+      </div>
+    <% end %>
+
+    <div class="question-date">
+      <%= answer.created_at.strftime('%d %b %M:%H') %>
+    </div>
+  </div>
+</div>
