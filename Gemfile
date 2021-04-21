@@ -16,6 +16,8 @@ gem 'jquery-rails'
 
 gem 'uglifier'
 
+gem 'pry-rails'
+
 gem 'rails_12factor'
 
 gem 'rails-i18n'
