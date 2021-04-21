@@ -16,6 +16,8 @@ gem 'jquery-rails'
 
 gem 'uglifier'
 
+gem 'rails_12factor'
+
 gem 'rails-i18n'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
