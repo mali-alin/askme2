@@ -11,9 +11,11 @@ gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker', '~> 4.0'
+
 gem 'jquery-rails'
 
 gem 'uglifier'
+
 gem 'rails-i18n'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
