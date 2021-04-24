@@ -20,6 +20,7 @@ class User < ApplicationRecord
   validates :username, length: { maximum: 40 }
   validates :username, format: { with: USERNAME_FORMAT}
   validates :email, format: { with: EMAIL_FORMAT }
+  validates :profile_color, format: { with: /\A#\h{6}\z/ }
 
   #служебный метод, преобразующий бинарную строку в 16-ричный формат, для удобства хранения
   def self.hash_to_string(password_hash)
