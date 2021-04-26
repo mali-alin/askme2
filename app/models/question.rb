@@ -4,7 +4,6 @@ class Question < ApplicationRecord
 
   validates :text, presence: true
   validates :text, length: {maximum: 255}
-  validates :author_id, null: false
 
   scope :answered, -> { where.not(answer: nil) }
   scope :unanswered, -> { where(answer: nil) }
